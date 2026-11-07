@@ -223,7 +223,7 @@ document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)r
   if(b.dataset.m!=null){ui.detail=+b.dataset.m;if(view()!=='wedstrijden'){location.hash='wedstrijden';return}render();window.scrollTo(0,0)}
   else if(b.dataset.back){ui.detail=null;render()}});
 window.addEventListener('hashchange',()=>{if(view()!=='wedstrijden')ui.detail=null;render()});
-fetch('data.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{D=d;MODEL=fitModel();
+fetch('https://raw.githubusercontent.com/Thom2005Bloem/robur-o23-2/main/data.json?t='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw 0;return r.json()}).catch(()=>fetch('data.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw 0;return r.json()})).then(d=>{D=d;MODEL=fitModel();
   document.getElementById('sub').textContent=D.competitie;
   document.getElementById('foot').innerHTML=`Alleen om te bekijken · bijgewerkt op ${new Date(D.bijgewerkt+'T12:00').toLocaleDateString('nl-NL',{day:'numeric',month:'long',year:'numeric'})} · elke zondag nieuwe gegevens`;render()})
  .catch(()=>{document.getElementById('app').innerHTML='<section class="panel"><p>De gegevens konden niet worden geladen. Ververs de pagina om het opnieuw te proberen.</p></section>'});

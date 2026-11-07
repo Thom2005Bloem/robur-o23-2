@@ -1,10 +1,28 @@
 name: Gegevens ophalen
+# Haalt de nieuwste teamgegevens op uit de openbare Google Drive-map die de publicatietaak van Claude vult,
+# en zet ze in data.json. De web-app leest data.json.
 on:
+  schedule:
+    - cron: '*/15 * * * *'
   workflow_dispatch:
+  push:
+    paths: ['.github/workflows/gegevens.yml', '.github/scripts/ophalen.py']
 permissions:
   contents: write
+concurrency: gegevens
 jobs:
   ophalen:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "test"
+      - uses: actions/checkout@v4
+      - name: Nieuwste bestand ophalen
+        run: python3 .github/scripts/ophalen.py
+        env:
+          MAP: 1i6o5FBdmnkHF0-nUYTlPscCEGBulWCaf
+          LOG: ${{ github.event_name == 'push' && 'sync-status.txt' || '' }}
+      - name: Opslaan als er iets veranderd is
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data.json sync-status.txt 2>/dev/null || true
+          git diff --cached --quiet || { git commit -m "Gegevens bijwerken"; git push; }
