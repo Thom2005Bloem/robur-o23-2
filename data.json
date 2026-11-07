@@ -566,12 +566,18 @@
    "naam": "Thom",
    "rol": "RM",
    "ook": []
+  },
+  {
+   "nr": 20,
+   "naam": "Stijn K",
+   "rol": "SP",
+   "ook": []
   }
  ],
  "wedstrijden": [
   {
    "datum": "2026-08-29",
-   "tegen": "VIOS Vaassen",
+   "tegen": "VIOS Vaassen (beker)",
    "thuis": true,
    "verslag": true,
    "score": [
@@ -600,7 +606,7 @@
      "rol": "LV"
     },
     {
-     "nr": "",
+     "nr": 20,
      "naam": "Stijn K",
      "rol": "SP"
     },
