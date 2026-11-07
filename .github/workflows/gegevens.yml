@@ -1,0 +1,10 @@
+name: Gegevens ophalen
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  ophalen:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "test"
