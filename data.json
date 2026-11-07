@@ -268,15 +268,16 @@
    "a": "Activia O23-1",
    "hg": 5,
    "ag": 0
+  },
+  {
+   "d": "2026-11-07",
+   "h": "Robur et Velocitas O23-2",
+   "a": "FC RDC O23-2",
+   "hg": 3,
+   "ag": 1
   }
  ],
  "fixtures": [
-  {
-   "d": "2026-11-07",
-   "t": "17:00",
-   "h": "Robur et Velocitas O23-2",
-   "a": "FC RDC O23-2"
-  },
   {
    "d": "2026-11-14",
    "t": "13:00",
