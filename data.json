@@ -570,6 +570,96 @@
  ],
  "wedstrijden": [
   {
+   "datum": "2026-08-29",
+   "tegen": "VIOS Vaassen",
+   "thuis": true,
+   "verslag": true,
+   "score": [
+    1,
+    3
+   ],
+   "basis": [
+    {
+     "nr": 1,
+     "naam": "Nils",
+     "rol": "K"
+    },
+    {
+     "nr": 16,
+     "naam": "Raoul",
+     "rol": "RA"
+    },
+    {
+     "nr": 5,
+     "naam": "Senna",
+     "rol": "LA"
+    },
+    {
+     "nr": 11,
+     "naam": "Bram",
+     "rol": "LV"
+    },
+    {
+     "nr": "",
+     "naam": "Stijn K",
+     "rol": "SP"
+    },
+    {
+     "nr": 6,
+     "naam": "Finn V",
+     "rol": "LM"
+    },
+    {
+     "nr": 15,
+     "naam": "Finn H",
+     "rol": "CV"
+    },
+    {
+     "nr": 12,
+     "naam": "Cas",
+     "rol": "VM"
+    }
+   ],
+   "wissels": [],
+   "goals": [
+    {
+     "t": 6,
+     "wie": "Bram",
+     "assist": "Senna"
+    },
+    {
+     "t": 18,
+     "tegen": true
+    },
+    {
+     "t": 30,
+     "tegen": true
+    },
+    {
+     "t": 75,
+     "tegen": true
+    }
+   ],
+   "schoten": [
+    {
+     "wie": "Bram",
+     "res": "goal"
+    },
+    {
+     "wie": "Stijn K",
+     "res": "naast"
+    },
+    {
+     "wie": "Finn H",
+     "res": "naast"
+    },
+    {
+     "wie": "Cas",
+     "res": "op"
+    }
+   ]
+  },
+  {
    "datum": "2026-10-03",
    "tegen": "SEH",
    "thuis": true,
