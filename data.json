@@ -1,5 +1,4 @@
 {
- "bijgewerkt": "2026-11-07",
  "team": "Robur et Velocitas O23-2",
  "competitie": "Onder 23 zaterdag · 1e klasse 5 najaar",
  "teams": [
@@ -16,6 +15,7 @@
   "sv Groen Wit '62 O23-3",
   "Terwolde O23-1"
  ],
+ "bijgewerkt": "2026-11-07",
  "results": [
   {
    "d": "2026-10-31",
@@ -454,15 +454,45 @@
    "ook": []
   },
   {
+   "nr": 17,
+   "naam": "Wouter",
+   "rol": "CM",
+   "ook": []
+  },
+  {
+   "nr": 2,
+   "naam": "Benjamin",
+   "rol": "RA",
+   "ook": []
+  },
+  {
    "nr": 11,
    "naam": "Bram",
    "rol": "LV",
    "ook": []
   },
   {
-   "nr": 17,
-   "naam": "Wouter",
-   "rol": "CM",
+   "nr": 12,
+   "naam": "Cas",
+   "rol": "VM",
+   "ook": []
+  },
+  {
+   "nr": 18,
+   "naam": "Cas B",
+   "rol": "SP",
+   "ook": []
+  },
+  {
+   "nr": 8,
+   "naam": "Daan",
+   "rol": "RM",
+   "ook": []
+  },
+  {
+   "nr": 15,
+   "naam": "Finn H",
+   "rol": "CV",
    "ook": []
   },
   {
@@ -472,15 +502,15 @@
    "ook": []
   },
   {
-   "nr": 1,
-   "naam": "Nils",
-   "rol": "K",
+   "nr": 10,
+   "naam": "Niek",
+   "rol": "MM",
    "ook": []
   },
   {
-   "nr": 12,
-   "naam": "Cas",
-   "rol": "VM",
+   "nr": 1,
+   "naam": "Nils",
+   "rol": "K",
    "ook": []
   },
   {
@@ -492,12 +522,6 @@
    ]
   },
   {
-   "nr": 7,
-   "naam": "Tim",
-   "rol": "RV",
-   "ook": []
-  },
-  {
    "nr": 5,
    "naam": "Senna",
    "rol": "LA",
@@ -506,8 +530,8 @@
    ]
   },
   {
-   "nr": 15,
-   "naam": "Finn H",
+   "nr": 3,
+   "naam": "Stijn O",
    "rol": "CV",
    "ook": []
   },
@@ -526,33 +550,15 @@
    "ook": []
   },
   {
+   "nr": 7,
+   "naam": "Tim",
+   "rol": "RV",
+   "ook": []
+  },
+  {
    "nr": 14,
    "naam": "Thom",
    "rol": "RM",
-   "ook": []
-  },
-  {
-   "nr": 3,
-   "naam": "Stijn O",
-   "rol": "CV",
-   "ook": []
-  },
-  {
-   "nr": 8,
-   "naam": "Daan",
-   "rol": "RM",
-   "ook": []
-  },
-  {
-   "nr": 2,
-   "naam": "Benjamin",
-   "rol": "RA",
-   "ook": []
-  },
-  {
-   "nr": 10,
-   "naam": "Niek",
-   "rol": "MM",
    "ook": []
   }
  ],
