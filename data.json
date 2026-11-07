@@ -1,0 +1,691 @@
+{
+ "bijgewerkt": "2026-11-07",
+ "team": "Robur et Velocitas O23-2",
+ "competitie": "Onder 23 zaterdag · 1e klasse 5 najaar",
+ "teams": [
+  "Diepenveen O23-1",
+  "WSV O23-2",
+  "Activia O23-1",
+  "Be Quick '28 O23-1",
+  "SV Twello O23-1",
+  "FC RDC O23-2",
+  "Robur et Velocitas O23-2",
+  "csv Apeldoorn O23-3",
+  "FC Zutphen O23-1",
+  "SEH O23-1",
+  "sv Groen Wit '62 O23-3",
+  "Terwolde O23-1"
+ ],
+ "results": [
+  {
+   "d": "2026-10-31",
+   "h": "Be Quick '28 O23-1",
+   "a": "Terwolde O23-1",
+   "hg": 4,
+   "ag": 1
+  },
+  {
+   "d": "2026-10-31",
+   "h": "FC Zutphen O23-1",
+   "a": "Diepenveen O23-1",
+   "hg": 2,
+   "ag": 3
+  },
+  {
+   "d": "2026-10-31",
+   "h": "SEH O23-1",
+   "a": "SV Twello O23-1",
+   "hg": 2,
+   "ag": 4
+  },
+  {
+   "d": "2026-10-31",
+   "h": "FC RDC O23-2",
+   "a": "csv Apeldoorn O23-3",
+   "hg": 2,
+   "ag": 1
+  },
+  {
+   "d": "2026-10-31",
+   "h": "WSV O23-2",
+   "a": "Activia O23-1",
+   "hg": 3,
+   "ag": 4
+  },
+  {
+   "d": "2026-10-24",
+   "h": "csv Apeldoorn O23-3",
+   "a": "Be Quick '28 O23-1",
+   "hg": 1,
+   "ag": 2
+  },
+  {
+   "d": "2026-10-24",
+   "h": "Activia O23-1",
+   "a": "FC RDC O23-2",
+   "hg": 1,
+   "ag": 4
+  },
+  {
+   "d": "2026-10-24",
+   "h": "Diepenveen O23-1",
+   "a": "WSV O23-2",
+   "hg": 2,
+   "ag": 1
+  },
+  {
+   "d": "2026-10-17",
+   "h": "csv Apeldoorn O23-3",
+   "a": "Terwolde O23-1",
+   "hg": 8,
+   "ag": 1
+  },
+  {
+   "d": "2026-10-10",
+   "h": "Be Quick '28 O23-1",
+   "a": "Robur et Velocitas O23-2",
+   "hg": 3,
+   "ag": 1
+  },
+  {
+   "d": "2026-10-10",
+   "h": "sv Groen Wit '62 O23-3",
+   "a": "Activia O23-1",
+   "hg": 2,
+   "ag": 4
+  },
+  {
+   "d": "2026-10-10",
+   "h": "SEH O23-1",
+   "a": "Diepenveen O23-1",
+   "hg": 2,
+   "ag": 10
+  },
+  {
+   "d": "2026-10-10",
+   "h": "FC Zutphen O23-1",
+   "a": "FC RDC O23-2",
+   "hg": 4,
+   "ag": 2
+  },
+  {
+   "d": "2026-10-10",
+   "h": "Terwolde O23-1",
+   "a": "SV Twello O23-1",
+   "hg": 1,
+   "ag": 7
+  },
+  {
+   "d": "2026-10-10",
+   "h": "WSV O23-2",
+   "a": "csv Apeldoorn O23-3",
+   "hg": 2,
+   "ag": 1
+  },
+  {
+   "d": "2026-10-03",
+   "h": "SV Twello O23-1",
+   "a": "Be Quick '28 O23-1",
+   "hg": 1,
+   "ag": 1
+  },
+  {
+   "d": "2026-10-03",
+   "h": "Activia O23-1",
+   "a": "FC Zutphen O23-1",
+   "hg": 3,
+   "ag": 8
+  },
+  {
+   "d": "2026-10-03",
+   "h": "Diepenveen O23-1",
+   "a": "sv Groen Wit '62 O23-3",
+   "hg": 20,
+   "ag": 1
+  },
+  {
+   "d": "2026-10-03",
+   "h": "Robur et Velocitas O23-2",
+   "a": "SEH O23-1",
+   "hg": 3,
+   "ag": 1
+  },
+  {
+   "d": "2026-10-03",
+   "h": "FC RDC O23-2",
+   "a": "WSV O23-2",
+   "hg": 0,
+   "ag": 1
+  },
+  {
+   "d": "2026-09-26",
+   "h": "SV Twello O23-1",
+   "a": "Robur et Velocitas O23-2",
+   "hg": 2,
+   "ag": 2
+  },
+  {
+   "d": "2026-09-26",
+   "h": "SEH O23-1",
+   "a": "FC RDC O23-2",
+   "hg": 4,
+   "ag": 3
+  },
+  {
+   "d": "2026-09-26",
+   "h": "Be Quick '28 O23-1",
+   "a": "Activia O23-1",
+   "hg": 3,
+   "ag": 6
+  },
+  {
+   "d": "2026-09-26",
+   "h": "FC Zutphen O23-1",
+   "a": "csv Apeldoorn O23-3",
+   "hg": 1,
+   "ag": 2
+  },
+  {
+   "d": "2026-09-26",
+   "h": "sv Groen Wit '62 O23-3",
+   "a": "WSV O23-2",
+   "hg": 0,
+   "ag": 1
+  },
+  {
+   "d": "2026-09-26",
+   "h": "Terwolde O23-1",
+   "a": "Diepenveen O23-1",
+   "hg": 2,
+   "ag": 9
+  },
+  {
+   "d": "2026-09-19",
+   "h": "csv Apeldoorn O23-3",
+   "a": "SV Twello O23-1",
+   "hg": 3,
+   "ag": 3
+  },
+  {
+   "d": "2026-09-19",
+   "h": "Activia O23-1",
+   "a": "SEH O23-1",
+   "hg": 4,
+   "ag": 1
+  },
+  {
+   "d": "2026-09-19",
+   "h": "WSV O23-2",
+   "a": "FC Zutphen O23-1",
+   "hg": 8,
+   "ag": 0
+  },
+  {
+   "d": "2026-09-19",
+   "h": "FC RDC O23-2",
+   "a": "sv Groen Wit '62 O23-3",
+   "hg": 9,
+   "ag": 0
+  },
+  {
+   "d": "2026-09-19",
+   "h": "Diepenveen O23-1",
+   "a": "Be Quick '28 O23-1",
+   "hg": 3,
+   "ag": 2
+  },
+  {
+   "d": "2026-09-19",
+   "h": "Robur et Velocitas O23-2",
+   "a": "Terwolde O23-1",
+   "hg": 12,
+   "ag": 0
+  },
+  {
+   "d": "2026-11-07",
+   "h": "SV Twello O23-1",
+   "a": "WSV O23-2",
+   "hg": 2,
+   "ag": 0
+  },
+  {
+   "d": "2026-11-07",
+   "h": "Be Quick '28 O23-1",
+   "a": "sv Groen Wit '62 O23-3",
+   "hg": 4,
+   "ag": 0
+  },
+  {
+   "d": "2026-11-07",
+   "h": "Terwolde O23-1",
+   "a": "FC Zutphen O23-1",
+   "hg": 2,
+   "ag": 2
+  },
+  {
+   "d": "2026-11-07",
+   "h": "Diepenveen O23-1",
+   "a": "Activia O23-1",
+   "hg": 5,
+   "ag": 0
+  }
+ ],
+ "fixtures": [
+  {
+   "d": "2026-11-07",
+   "t": "17:00",
+   "h": "Robur et Velocitas O23-2",
+   "a": "FC RDC O23-2"
+  },
+  {
+   "d": "2026-11-14",
+   "t": "13:00",
+   "h": "SEH O23-1",
+   "a": "Be Quick '28 O23-1"
+  },
+  {
+   "d": "2026-11-14",
+   "t": "14:30",
+   "h": "Activia O23-1",
+   "a": "csv Apeldoorn O23-3"
+  },
+  {
+   "d": "2026-11-14",
+   "t": "14:30",
+   "h": "sv Groen Wit '62 O23-3",
+   "a": "Terwolde O23-1"
+  },
+  {
+   "d": "2026-11-14",
+   "t": "14:30",
+   "h": "FC Zutphen O23-1",
+   "a": "SV Twello O23-1"
+  },
+  {
+   "d": "2026-11-14",
+   "t": "15:00",
+   "h": "WSV O23-2",
+   "a": "Robur et Velocitas O23-2"
+  },
+  {
+   "d": "2026-11-14",
+   "t": "15:00",
+   "h": "FC RDC O23-2",
+   "a": "Diepenveen O23-1"
+  },
+  {
+   "d": "2026-11-21",
+   "t": "12:00",
+   "h": "SV Twello O23-1",
+   "a": "Activia O23-1"
+  },
+  {
+   "d": "2026-11-21",
+   "t": "12:15",
+   "h": "sv Groen Wit '62 O23-3",
+   "a": "csv Apeldoorn O23-3"
+  },
+  {
+   "d": "2026-11-21",
+   "t": "12:30",
+   "h": "Be Quick '28 O23-1",
+   "a": "WSV O23-2"
+  },
+  {
+   "d": "2026-11-21",
+   "t": "14:30",
+   "h": "SEH O23-1",
+   "a": "FC Zutphen O23-1"
+  },
+  {
+   "d": "2026-11-21",
+   "t": "14:30",
+   "h": "Terwolde O23-1",
+   "a": "FC RDC O23-2"
+  },
+  {
+   "d": "2026-11-21",
+   "t": "16:30",
+   "h": "Robur et Velocitas O23-2",
+   "a": "Diepenveen O23-1"
+  },
+  {
+   "d": "2026-11-28",
+   "t": "12:00",
+   "h": "WSV O23-2",
+   "a": "SEH O23-1"
+  },
+  {
+   "d": "2026-11-28",
+   "t": "12:30",
+   "h": "FC Zutphen O23-1",
+   "a": "sv Groen Wit '62 O23-3"
+  },
+  {
+   "d": "2026-11-28",
+   "t": "13:00",
+   "h": "csv Apeldoorn O23-3",
+   "a": "Robur et Velocitas O23-2"
+  },
+  {
+   "d": "2026-11-28",
+   "t": "14:30",
+   "h": "Activia O23-1",
+   "a": "Terwolde O23-1"
+  },
+  {
+   "d": "2026-11-28",
+   "t": "15:00",
+   "h": "Diepenveen O23-1",
+   "a": "SV Twello O23-1"
+  },
+  {
+   "d": "2026-11-28",
+   "t": "15:00",
+   "h": "FC RDC O23-2",
+   "a": "Be Quick '28 O23-1"
+  },
+  {
+   "d": "2026-12-05",
+   "t": "14:00",
+   "h": "Diepenveen O23-1",
+   "a": "csv Apeldoorn O23-3"
+  },
+  {
+   "d": "2026-12-05",
+   "t": "14:15",
+   "h": "WSV O23-2",
+   "a": "Terwolde O23-1"
+  },
+  {
+   "d": "2026-12-05",
+   "t": "14:30",
+   "h": "Activia O23-1",
+   "a": "Robur et Velocitas O23-2"
+  },
+  {
+   "d": "2026-12-05",
+   "t": "14:30",
+   "h": "FC Zutphen O23-1",
+   "a": "Be Quick '28 O23-1"
+  },
+  {
+   "d": "2026-12-05",
+   "t": "15:00",
+   "h": "FC RDC O23-2",
+   "a": "SV Twello O23-1"
+  },
+  {
+   "d": "2026-12-05",
+   "t": "15:45",
+   "h": "sv Groen Wit '62 O23-3",
+   "a": "SEH O23-1"
+  },
+  {
+   "d": "2026-12-12",
+   "t": "12:00",
+   "h": "SV Twello O23-1",
+   "a": "sv Groen Wit '62 O23-3"
+  },
+  {
+   "d": "2026-12-12",
+   "t": "14:30",
+   "h": "Terwolde O23-1",
+   "a": "SEH O23-1"
+  },
+  {
+   "d": "2026-12-12",
+   "t": "16:45",
+   "h": "Robur et Velocitas O23-2",
+   "a": "FC Zutphen O23-1"
+  },
+  {
+   "d": "2026-12-19",
+   "t": "14:30",
+   "h": "sv Groen Wit '62 O23-3",
+   "a": "Robur et Velocitas O23-2"
+  }
+ ],
+ "selectie": [
+  {
+   "nr": 16,
+   "naam": "Raoul",
+   "rol": "RA",
+   "ook": []
+  },
+  {
+   "nr": 11,
+   "naam": "Bram",
+   "rol": "LV",
+   "ook": []
+  },
+  {
+   "nr": 17,
+   "naam": "Wouter",
+   "rol": "CM",
+   "ook": []
+  },
+  {
+   "nr": 13,
+   "naam": "Luc",
+   "rol": "CV",
+   "ook": []
+  },
+  {
+   "nr": 1,
+   "naam": "Nils",
+   "rol": "K",
+   "ook": []
+  },
+  {
+   "nr": 12,
+   "naam": "Cas",
+   "rol": "VM",
+   "ook": []
+  },
+  {
+   "nr": 6,
+   "naam": "Finn V",
+   "rol": "LM",
+   "ook": [
+    "LV"
+   ]
+  },
+  {
+   "nr": 7,
+   "naam": "Tim",
+   "rol": "RV",
+   "ook": []
+  },
+  {
+   "nr": 5,
+   "naam": "Senna",
+   "rol": "LA",
+   "ook": [
+    "RV"
+   ]
+  },
+  {
+   "nr": 15,
+   "naam": "Finn H",
+   "rol": "CV",
+   "ook": []
+  },
+  {
+   "nr": 4,
+   "naam": "Thijs",
+   "rol": "CV",
+   "ook": [
+    "CM"
+   ]
+  },
+  {
+   "nr": 9,
+   "naam": "Ties",
+   "rol": "SP",
+   "ook": []
+  },
+  {
+   "nr": 14,
+   "naam": "Thom",
+   "rol": "RM",
+   "ook": []
+  },
+  {
+   "nr": 3,
+   "naam": "Stijn O",
+   "rol": "CV",
+   "ook": []
+  },
+  {
+   "nr": 8,
+   "naam": "Daan",
+   "rol": "RM",
+   "ook": []
+  },
+  {
+   "nr": 2,
+   "naam": "Benjamin",
+   "rol": "RA",
+   "ook": []
+  },
+  {
+   "nr": 10,
+   "naam": "Niek",
+   "rol": "MM",
+   "ook": []
+  }
+ ],
+ "wedstrijden": [
+  {
+   "datum": "2026-10-03",
+   "tegen": "SEH",
+   "thuis": true,
+   "verslag": true,
+   "score": [
+    3,
+    1
+   ],
+   "basis": [
+    {
+     "nr": 1,
+     "naam": "Nils",
+     "rol": "K"
+    },
+    {
+     "nr": 15,
+     "naam": "Jasper",
+     "rol": "CV"
+    },
+    {
+     "nr": 2,
+     "naam": "Benjamin",
+     "rol": "RA"
+    },
+    {
+     "nr": 16,
+     "naam": "Fedde",
+     "rol": "CV"
+    },
+    {
+     "nr": 17,
+     "naam": "Jelte",
+     "rol": "CV"
+    },
+    {
+     "nr": 3,
+     "naam": "Stijn O",
+     "rol": "CV"
+    },
+    {
+     "nr": 8,
+     "naam": "Daan",
+     "rol": "RM"
+    },
+    {
+     "nr": 11,
+     "naam": "Bram",
+     "rol": "LV"
+    },
+    {
+     "nr": 12,
+     "naam": "Cas",
+     "rol": "VM"
+    },
+    {
+     "nr": 6,
+     "naam": "Finn V",
+     "rol": "LM"
+    },
+    {
+     "nr": 5,
+     "naam": "Senna",
+     "rol": "LA"
+    }
+   ],
+   "wissels": [
+    {
+     "t": 46,
+     "in": "Tim",
+     "uit": "Jasper"
+    },
+    {
+     "t": 60,
+     "in": "Omeeth",
+     "uit": "Benjamin"
+    }
+   ],
+   "goals": [
+    {
+     "t": 25,
+     "wie": "Bram",
+     "assist": "Jasper"
+    },
+    {
+     "t": 35,
+     "tegen": true
+    },
+    {
+     "t": 55,
+     "wie": "Bram",
+     "assist": "Finn V"
+    },
+    {
+     "t": 85,
+     "wie": "Omeeth",
+     "assist": "Daan"
+    }
+   ],
+   "schoten": [
+    {
+     "wie": "Finn V",
+     "res": "naast"
+    },
+    {
+     "wie": "Daan",
+     "res": "naast"
+    },
+    {
+     "wie": "Bram",
+     "res": "goal"
+    },
+    {
+     "wie": "Daan",
+     "res": "naast"
+    },
+    {
+     "wie": "Senna",
+     "res": "op"
+    },
+    {
+     "wie": "Bram",
+     "res": "goal"
+    },
+    {
+     "wie": "Omeeth",
+     "res": "goal"
+    }
+   ]
+  }
+ ]
+}

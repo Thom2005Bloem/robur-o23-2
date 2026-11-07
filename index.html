@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1a5e34">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Robur O23-2">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}body{margin:0;-webkit-tap-highlight-color:transparent}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<title>Robur O23-2 Teampagina</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Barlow:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: wedstrijdprogramma voor de selectie. Zelfde clubstijl als Robur O23-2 Scout (grasgroen, rood-wit shirtband, zwart scorebord),
+   maar alleen om te lezen: geen knoppen om iets in te vullen. */
+:root{
+  --bg:#f2f5f0; --surface:#ffffff; --surface-2:#e5ebe2; --ink:#121812; --muted:#5a6a5c; --line:#d3dccf;
+  --grass:#1a5e34; --grass-2:#22703f; --red:#c8102e; --chalk:#ffffff; --board:#0d100d;
+  --good:#1e7f45; --bad:#c8102e; --gold:#e3b23c;
+  --f-display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --f-body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif; --r:8px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0c120e; --surface:#141c16; --surface-2:#1c271f; --ink:#ecf2ea; --muted:#9db09f; --line:#28372b;
+  --grass:#123f24; --grass-2:#17492b; --red:#d4183a; --board:#050705; --good:#46c47a; --bad:#ff6b80; --gold:#e8be55; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0c120e; --surface:#141c16; --surface-2:#1c271f; --ink:#ecf2ea; --muted:#9db09f; --line:#28372b;
+  --grass:#123f24; --grass-2:#17492b; --red:#d4183a; --board:#050705; --good:#46c47a; --bad:#ff6b80; --gold:#e8be55; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.5 var(--f-body);margin:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--grass)}
+.wrap{max-width:900px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;color:var(--chalk);background:repeating-linear-gradient(90deg,var(--grass) 0 56px,var(--grass-2) 56px 112px)}
+header::after{content:"";display:block;height:6px;background:repeating-linear-gradient(90deg,#c8102e 0 12px,#fff 12px 24px)}
+header .wrap{display:flex;flex-direction:column;gap:4px;padding-block:12px 0}
+.brand{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.brand h1{font:800 1.8rem/1 var(--f-display);text-transform:uppercase;margin:0;display:flex;align-items:center;gap:10px}
+.brand .sub{font-size:.88rem;opacity:.85}
+nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+nav a{font:700 1.05rem/1 var(--f-display);text-transform:uppercase;letter-spacing:.05em;color:inherit;opacity:.75;text-decoration:none;padding:10px 11px 11px;border-bottom:4px solid transparent;white-space:nowrap}
+nav a[aria-current="page"]{opacity:1;border-color:var(--chalk)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+main.wrap{padding-block:20px 50px;display:flex;flex-direction:column;gap:18px}
+h2{font:800 1.7rem/1.05 var(--f-display);text-transform:uppercase;margin:0;text-wrap:balance}
+h3{font:700 1.12rem/1.1 var(--f-display);text-transform:uppercase;letter-spacing:.06em;margin:0;color:var(--muted)}
+p{margin:0;max-width:68ch}.muted{color:var(--muted)}.small{font-size:.88rem}.note{font-size:.85rem;color:var(--muted)}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.between{justify-content:space-between}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+button{font:600 1rem/1.1 var(--f-body);border-radius:6px;border:1px solid var(--line);background:var(--surface-2);color:var(--ink);padding:10px 14px;cursor:pointer;min-height:44px}
+.ghost{background:transparent}
+.tablebox{overflow-x:auto;min-width:0}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:8px 7px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font:600 .78rem/1.2 var(--f-body);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.num{text-align:right}tr.us td{background:color-mix(in srgb,var(--red) 9%,transparent);font-weight:700}
+.board{background:var(--board);color:#fff;border-radius:var(--r);padding:14px 16px;display:grid;grid-template-columns:1fr auto 1fr;gap:8px 12px;align-items:center}
+.board .t{display:flex;flex-direction:column;gap:4px;min-width:0}.board .t.r{align-items:flex-end;text-align:right}
+.board .nm{font:700 1.05rem/1.05 var(--f-display);text-transform:uppercase;letter-spacing:.05em;opacity:.85}
+.board .sc{font:800 3.6rem/0.9 var(--f-display);font-variant-numeric:tabular-nums}
+.board .mid{font:800 1.5rem/1 var(--f-display);color:var(--gold);text-align:center;display:flex;flex-direction:column;align-items:center;gap:4px}
+.board .mid small{font:600 .72rem/1 var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:#fff;opacity:.75}
+.wdl{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.wdl div{display:flex;flex-direction:column;align-items:center;gap:4px;padding:12px 6px;border-radius:6px;background:var(--surface-2)}
+.wdl b{font:800 2.2rem/1 var(--f-display);font-variant-numeric:tabular-nums}.wdl span{font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.wdl .w b{color:var(--good)}.wdl .l b{color:var(--bad)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px}
+.kpi{display:flex;flex-direction:column;gap:2px}.kpi .v{font:800 2.1rem/1 var(--f-display);font-variant-numeric:tabular-nums}.kpi .l{font-size:.82rem;color:var(--muted)}
+.rlist{display:flex;flex-direction:column}
+.rr{display:flex;align-items:center;gap:12px;padding:9px 6px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.rr.us{background:color-mix(in srgb,var(--red) 9%,transparent)}.rr .rd{width:84px;flex:none}
+.ml{display:grid;grid-template-columns:minmax(0,1fr) 64px minmax(0,1fr);gap:8px;align-items:center;flex:1;min-width:230px}
+.ml .mh{text-align:right}.ml .msc{font:800 1.3rem/1 var(--f-display);text-align:center;font-variant-numeric:tabular-nums;background:var(--board);color:#fff;border-radius:4px;padding:4px 0}
+.ml .msc.t{background:var(--surface-2);color:var(--ink);font-size:1.05rem}
+.badge{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:4px;font:800 .95rem/1 var(--f-display);color:#fff}
+.b-W{background:var(--good)}.b-G{background:var(--muted)}.b-V{background:var(--bad)}
+.rgroup{display:flex;flex-direction:column;gap:6px}.rgroup h3{font-size:1rem;margin-top:6px}
+.stack{display:flex;height:10px;border-radius:3px;overflow:hidden;width:130px}.stack i{display:block;height:100%}
+.flag{background:var(--gold);color:#1a1405;font:700 .72rem/1 var(--f-body);text-transform:uppercase;letter-spacing:.05em;padding:4px 8px;border-radius:99px}
+.formatie{position:relative;max-width:420px;width:100%;aspect-ratio:3/4;border-radius:6px;overflow:hidden;
+  background:linear-gradient(#ffffffcc,#ffffffcc) 50% 0/40% 2px no-repeat,repeating-linear-gradient(0deg,var(--grass) 0 12.5%,var(--grass-2) 12.5% 25%);box-shadow:inset 0 0 0 2px #ffffffb0}
+.formatie::before{content:"";position:absolute;left:25%;right:25%;bottom:0;height:17%;border:2px solid #ffffffb0;border-bottom:0}
+.fpl{position:absolute;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:2px;width:84px}
+.fpl .sh{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font:800 1.05rem/1 var(--f-display);color:#111;background:repeating-linear-gradient(90deg,#c8102e 0 6px,#fff 6px 12px);border:2px solid #111;text-shadow:0 0 3px #fff,0 0 3px #fff}
+.fpl .fn{font:700 .8rem/1 var(--f-body);color:#fff;background:#0009;padding:3px 6px;border-radius:4px;white-space:nowrap}
+.tl{display:flex;flex-direction:column}
+.tl div{display:flex;gap:10px;padding:6px 0;border-bottom:1px dashed var(--line);font-size:.95rem}
+.tl .min{font:700 1rem/1.3 var(--f-display);width:34px;flex:none;color:var(--muted)}
+.mcard{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.mcard .res{font:800 1.5rem/1 var(--f-display);font-variant-numeric:tabular-nums}
+.squad{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:6px 16px}
+.squad div{display:flex;gap:10px;align-items:baseline;padding:4px 0;border-bottom:1px solid var(--line)}
+.squad b{font:800 1.2rem/1 var(--f-display);width:28px;text-align:right}
+.diepte{position:relative;max-width:440px;width:100%;aspect-ratio:3/4.3;border-radius:6px;overflow:hidden;
+  background:linear-gradient(#ffffffcc,#ffffffcc) 50% 0/40% 2px no-repeat,repeating-linear-gradient(0deg,var(--grass) 0 12.5%,var(--grass-2) 12.5% 25%);box-shadow:inset 0 0 0 2px #ffffffb0}
+.diepte::before{content:"";position:absolute;left:25%;right:25%;bottom:0;height:15%;border:2px solid #ffffffb0;border-bottom:0}
+.slot{position:absolute;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:1px;background:#000000b8;border-radius:6px;padding:5px 7px;min-width:72px;max-width:31%;text-align:center}
+.slot .pl{font:700 .6rem/1.2 var(--f-body);text-transform:uppercase;letter-spacing:.05em;color:#e8be55;margin-bottom:2px}
+.slot .m{color:#fff;font:700 .78rem/1.25 var(--f-body)}.slot .o{color:#fff;opacity:.75;font:italic 500 .74rem/1.25 var(--f-body)}
+.mini{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.mini .formatie{max-width:none}
+.mini h3{font-size:.95rem}
+footer{font-size:.82rem;color:var(--muted);text-align:center}
+@media (max-width:520px){.board .sc{font-size:2.8rem}.brand h1{font-size:1.5rem}}
+</style>
+
+<header><div class="wrap">
+  <div class="brand"><h1><svg width="22" height="24" viewBox="0 0 22 24" aria-hidden="true"><defs><clipPath id="sh"><path d="M6 1 L1 5 L3 10 L5 9 L5 23 L17 23 L17 9 L19 10 L21 5 L16 1 Q11 4 6 1Z"/></clipPath></defs><g clip-path="url(#sh)"><rect width="22" height="24" fill="#fff"/><rect x="3" width="3" height="24" fill="#c8102e"/><rect x="9.5" width="3" height="24" fill="#c8102e"/><rect x="16" width="3" height="24" fill="#c8102e"/></g><path d="M6 1 L1 5 L3 10 L5 9 L5 23 L17 23 L17 9 L19 10 L21 5 L16 1 Q11 4 6 1Z" fill="none" stroke="#000" stroke-width=".8"/></svg>Robur O23-2</h1><span class="sub" id="sub">Teampagina</span></div>
+  <nav id="tabs" aria-label="Onderdelen"><a href="#overzicht">Overzicht</a><a href="#stand">Stand</a><a href="#uitslagen">Uitslagen</a><a href="#programma">Programma</a><a href="#wedstrijden">Wedstrijden</a><a href="#selectie">Selectie</a></nav>
+</div></header>
+<main class="wrap" id="app"><section class="panel"><p class="muted">Teampagina laden…</p></section></main>
+<footer class="wrap" id="foot"></footer>
+
+<script>
+let D=null,MODEL=null;const ui={detail:null};
+const ROL={K:'Keeper',RA:'Rechtsachter',CV:'Centrale verdediger',LA:'Linksachter',LM:'Linksmidden',VM:'Verdedigende middenvelder',CM:'Mid-mid',MM:'Aanvallende middenmid',RM:'Rechtsmidden',LV:'Linksvoor',SP:'Spits',RV:'Rechtsvoor'};
+const LINIE=[['Keepers',['K']],['Verdedigers',['RA','CV','LA']],['Middenvelders',['VM','CM','LM','RM','MM']],['Aanvallers',['LV','SP','RV']]];
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const pct=x=>Math.round(x*100)+'%',dec=(x,d=1)=>x.toFixed(d).replace('.',',');
+const short=n=>n.replace(/ O23-\d$/,'');
+const fmtDate=d=>new Date(d+'T12:00').toLocaleDateString('nl-NL',{weekday:'short',day:'numeric',month:'short'});
+const US=()=>D.team;
+/* stand + model (zelfde rekenwijze als de trainersapp) */
+function table(){const S={};D.teams.forEach(t=>S[t]={t,g:0,w:0,d:0,l:0,p:0,f:0,a:0});
+  for(const r of D.results){const h=S[r.h],a=S[r.a];if(!h||!a)continue;h.g++;a.g++;h.f+=r.hg;h.a+=r.ag;a.f+=r.ag;a.a+=r.hg;
+    if(r.hg>r.ag){h.w++;h.p+=3;a.l++}else if(r.hg<r.ag){a.w++;a.p+=3;h.l++}else{h.d++;a.d++;h.p++;a.p++}}
+  return Object.values(S).sort((x,y)=>y.p-x.p||x.g-y.g||(y.f-y.a)-(x.f-x.a)||y.f-x.f)}
+function fitModel(){const T=D.teams,n=T.length,ix=Object.fromEntries(T.map((t,i)=>[t,i]));
+  const R=D.results.filter(r=>r.h in ix&&r.a in ix).map(r=>({h:ix[r.h],a:ix[r.a],hg:Math.min(r.hg,7),ag:Math.min(r.ag,7)}));
+  const att=new Float64Array(n),def=new Float64Array(n);let mu=Math.log(2),h=.15;
+  for(let it=0;it<6000;it++){const gA=new Float64Array(n),gD=new Float64Array(n);let gM=0,gH=0;
+    for(const r of R){const lh=Math.exp(mu+h+att[r.h]+def[r.a]),la=Math.exp(mu+att[r.a]+def[r.h]);const eh=r.hg-lh,ea=r.ag-la;gM+=eh+ea;gH+=eh;gA[r.h]+=eh;gD[r.a]+=eh;gA[r.a]+=ea;gD[r.h]+=ea}
+    const lr=.004;mu+=lr*gM;h+=lr*(gH-(h-.15)*40);for(let i=0;i<n;i++){att[i]+=lr*(gA[i]-4*att[i]);def[i]+=lr*(gD[i]-4*def[i])}}
+  return{ix,att,def,mu,h}}
+const pmf=(l,k)=>{let p=Math.exp(-l);for(let i=1;i<=k;i++)p*=l/i;return p};
+function probs(home,away){const M=MODEL,i=M.ix[home],j=M.ix[away];if(i==null||j==null)return null;const lh=Math.exp(M.mu+M.h+M.att[i]+M.def[j]),la=Math.exp(M.mu+M.att[j]+M.def[i]);
+  let w=0,d=0,l=0;for(let x=0;x<=12;x++)for(let y=0;y<=12;y++){const p=pmf(lh,x)*pmf(la,y);if(x>y)w+=p;else if(x<y)l+=p;else d+=p}return{w,d,l,lh,la}}
+const ours=r=>r.h===US()||r.a===US();
+function wdl(r){const h=r.h===US(),f=h?r.hg:r.ag,a=h?r.ag:r.hg;return f>a?'W':f<a?'V':'G'}
+function matchLine(r,time){const n=t=>t===US()?'<b>Robur</b>':esc(short(t));
+  return`<span class="ml"><span class="mh">${n(r.h)}</span><span class="msc ${time?'t':''}">${time?esc(r.t):r.hg+' - '+r.ag}</span><span class="ma">${n(r.a)}</span></span>`}
+const tracked=r=>D.wedstrijden.findIndex(m=>m.datum===r.d&&(short(r.h)===m.tegen||short(r.a)===m.tegen));
+const SLOT={K:[50,90],RA:[86,72],CV:[50,74],LA:[14,72],VM:[50,60],CM:[50,48],LM:[20,48],RM:[80,48],MM:[50,36],LV:[18,18],SP:[50,14],RV:[82,18]};
+const LINES=[['K'],['LA','CV','RA'],['VM'],['LM','CM','RM'],['MM'],['LV','SP','RV']];
+function formatie(ps){const out=[];for(const line of LINES){const L=ps.filter(p=>line.includes(SLOT[p.rol]?p.rol:'CM')).sort((a,b)=>line.indexOf(a.rol)-line.indexOf(b.rol)||a.nr-b.nr);
+  const n=L.length;if(!n)continue;const y=Math.max(...L.map(p=>SLOT[p.rol]?.[1]??48));let xs=L.map(p=>SLOT[p.rol]?.[0]??50);
+  if(n>=3||new Set(xs).size<n)xs=n===1?[50]:L.map((_,i)=>n===2?[34,66][i]:12+i*76/(n-1));L.forEach((p,i)=>out.push([p,xs[i],y]))}
+  return`<div class="formatie" role="img" aria-label="Opstelling">${out.map(([p,x,y])=>`<div class="fpl" style="left:${x}%;top:${y}%"><span class="sh">${p.nr}</span><span class="fn">${esc(p.naam)}</span></div>`).join('')}</div>`}
+
+/* Dieptekaart: per positie in de formatie alle spelers die daar kunnen spelen */
+const ROLKORT={K:'Keeper',LA:'Linksachter',CV:'Centraal achter',RA:'Rechtsachter',VM:'Verdedigende mid',CM:'Mid-mid',LM:'Linksmidden',MM:'Aanvallende mid',RM:'Rechtsmidden',LV:'Linksvoor',SP:'Spits',RV:'Rechtsvoor'};
+const DSLOT={K:[50,91],LA:[15,72],CV:[50,76],RA:[85,72],VM:[50,62],LM:[17,48],CM:[50,51],RM:[83,48],MM:[50,36],LV:[17,15],SP:[50,11],RV:[83,15]};
+function dieptekaart(sp){const slots={};for(const p of sp){(slots[p.rol]=slots[p.rol]||[]).push({p,main:1});for(const r of p.ook||[])if(r!==p.rol&&DSLOT[r])(slots[r]=slots[r]||[]).push({p,main:0})}
+  const vast=['K','LA','CV','RA','LM','MM','RM','LV','SP','RV'];
+  return`<div class="diepte" role="img" aria-label="Wie kan waar spelen">${Object.keys(DSLOT).filter(k=>vast.includes(k)||slots[k]).map(k=>{const L=(slots[k]||[]).sort((a,b)=>b.main-a.main||a.p.nr-b.p.nr),[x,y]=DSLOT[k];
+    return`<div class="slot" style="left:${x}%;top:${y}%"><span class="pl">${ROLKORT[k]}</span>${L.map(o=>`<span class="${o.main?'m':'o'}">${o.p.nr} ${esc(o.p.naam)}</span>`).join('')||'<span class="o">nog niemand</span>'}</div>`}).join('')}</div>
+  <p class="note"><b>Vet</b>: vaste positie. <i>Schuin</i>: kan hier ook spelen.</p>`}
+
+
+/* ---------- pagina's ---------- */
+function vOverzicht(){const tb=table(),pos=tb.findIndex(o=>o.t===US())+1,me=tb[pos-1];
+  const R=D.results.filter(ours).sort((a,b)=>b.d.localeCompare(a.d)),last=R[0];
+  const nx=D.fixtures.filter(ours).sort((a,b)=>(a.d+a.t).localeCompare(b.d+b.t))[0];
+  let nxt='';if(nx){const P=probs(nx.h,nx.a),h=nx.h===US();
+    nxt=`<section class="panel"><h3>Volgende wedstrijd</h3><div class="board"><div class="t"><span class="nm">${esc(short(nx.h))}</span></div><div class="mid">${esc(nx.t)}<small>${fmtDate(nx.d)}</small></div><div class="t r"><span class="nm">${esc(short(nx.a))}</span></div></div>
+    ${P?`<div class="wdl"><div class="w"><b>${pct(h?P.w:P.l)}</b><span>Winst</span></div><div><b>${pct(P.d)}</b><span>Gelijk</span></div><div class="l"><b>${pct(h?P.l:P.w)}</b><span>Verlies</span></div></div><p class="note">Kans volgens de uitslagen in de poule tot nu toe.</p>`:''}</section>`}
+  return nxt+`<section class="panel"><div class="row between"><h3>Vorm</h3><span class="row">${R.slice(0,5).map(r=>`<span class="badge b-${wdl(r)}">${wdl(r)}</span>`).join('')}</span></div>
+    <div class="kpis"><div class="kpi"><span class="v">${pos}e</span><span class="l">Plek in de stand</span></div><div class="kpi"><span class="v">${me.p}</span><span class="l">Punten uit ${me.g}</span></div><div class="kpi"><span class="v">${me.f}-${me.a}</span><span class="l">Doelpunten</span></div></div>
+    ${last?`<p class="small muted">Laatste uitslag · ${fmtDate(last.d)}</p><div class="rlist"><div class="rr">${matchLine(last)}<span class="badge b-${wdl(last)}">${wdl(last)}</span>${tracked(last)>=0?`<button class="ghost" data-m="${tracked(last)}">Details</button>`:''}</div></div>`:''}</section>`+topscorers()}
+function topscorers(){const S={};const g=n=>S[n]||(S[n]={n,g:0,a:0,s:0,o:0});
+  for(const m of D.wedstrijden){for(const x of m.goals){if(x.tegen)continue;g(x.wie).g++;if(x.assist)g(x.assist).a++}
+    for(const x of m.schoten||[]){const o=g(x.wie);o.s++;if(x.res==='goal'||x.res==='op')o.o++}}
+  const L=Object.values(S).sort((a,b)=>b.g-a.g||b.s-a.s||b.a-a.a);if(!L.length)return'';
+  const T=L.reduce((t,o)=>({g:t.g+o.g,s:t.s+o.s,o:t.o+o.o}),{g:0,s:0,o:0});const pc=(a,b)=>b?pct(a/b):'–';
+  return`<section class="panel"><h3>Schieten en scoren</h3><div class="tablebox"><table><thead><tr><th>Speler</th><th class="num">Goals</th><th class="num">Assists</th><th class="num">Schoten</th><th class="num">Op doel</th><th class="num">% op doel</th><th class="num">% raak</th></tr></thead><tbody>
+    ${L.map(o=>`<tr><td>${esc(o.n)}</td><td class="num">${o.g}</td><td class="num">${o.a}</td><td class="num">${o.s}</td><td class="num">${o.o}</td><td class="num">${pc(o.o,o.s)}</td><td class="num">${pc(o.g,o.s)}</td></tr>`).join('')}
+    <tr class="us"><td>Team</td><td class="num">${T.g}</td><td class="num"></td><td class="num">${T.s}</td><td class="num">${T.o}</td><td class="num">${pc(T.o,T.s)}</td><td class="num">${pc(T.g,T.s)}</td></tr></tbody></table></div>
+    <p class="note">Op doel = goal of redding van de keeper. Uit de wedstrijden die de trainers hebben bijgehouden (${D.wedstrijden.length}).</p></section>`}
+function vStand(){const tb=table();
+  return`<section class="panel"><h2>Stand</h2><p class="small muted">${esc(D.competitie)}</p><div class="tablebox"><table><thead><tr><th class="num">#</th><th>Team</th><th class="num">G</th><th class="num">W</th><th class="num">GL</th><th class="num">V</th><th class="num">Doelp.</th><th class="num">Saldo</th><th class="num">P</th></tr></thead><tbody>
+  ${tb.map((o,i)=>`<tr class="${o.t===US()?'us':''}"><td class="num">${i+1}</td><td>${esc(short(o.t))}</td><td class="num">${o.g}</td><td class="num">${o.w}</td><td class="num">${o.d}</td><td class="num">${o.l}</td><td class="num">${o.f}-${o.a}</td><td class="num">${o.f-o.a>0?'+':''}${o.f-o.a}</td><td class="num"><b>${o.p}</b></td></tr>`).join('')}</tbody></table></div></section>`}
+function vUitslagen(){const byD={};for(const r of D.results)(byD[r.d]=byD[r.d]||[]).push(r);
+  return`<section class="panel"><h2>Uitslagen</h2>${Object.keys(byD).sort().reverse().map(d=>`<div class="rgroup"><h3>${new Date(d+'T12:00').toLocaleDateString('nl-NL',{weekday:'long',day:'numeric',month:'long'})}</h3>
+  <div class="rlist">${byD[d].map(r=>`<div class="rr ${ours(r)?'us':''}">${matchLine(r)}${ours(r)&&tracked(r)>=0?`<button class="ghost" data-m="${tracked(r)}">Details</button>`:''}</div>`).join('')}</div></div>`).join('')}</section>`}
+function vProgramma(){const F=D.fixtures.slice().sort((a,b)=>(a.d+a.t).localeCompare(b.d+b.t));const byD={};for(const f of F)(byD[f.d]=byD[f.d]||[]).push(f);
+  const own=F.filter(ours).map(f=>{const P=probs(f.h,f.a),h=f.h===US();const w=P?(h?P.w:P.l):0,l=P?(h?P.l:P.w):0;
+    return`<div class="rr"><span class="small muted rd">${fmtDate(f.d)}</span>${matchLine(f,true)}${P?`<span class="row"><span class="stack" aria-hidden="true"><i style="width:${w*100}%;background:var(--good)"></i><i style="width:${P.d*100}%;background:var(--line)"></i><i style="width:${l*100}%;background:var(--bad)"></i></span><span class="small">${pct(w)} / ${pct(P.d)} / ${pct(l)}</span></span>`:''}</div>`}).join('');
+  return`<section class="panel"><h2>Programma Robur</h2><p class="note">Kans op winst / gelijk / verlies, berekend uit de uitslagen in de poule.</p><div class="rlist">${own||'<p class="muted">Geen wedstrijden meer gepland.</p>'}</div></section>
+  <section class="panel"><h3>Hele poule</h3>${Object.keys(byD).map(d=>`<div class="rgroup"><h3>${new Date(d+'T12:00').toLocaleDateString('nl-NL',{weekday:'long',day:'numeric',month:'long'})}</h3><div class="rlist">${byD[d].map(f=>`<div class="rr ${ours(f)?'us':''}">${matchLine(f,true)}</div>`).join('')}</div></div>`).join('')}</section>`}
+function vWedstrijden(){if(ui.detail!=null&&D.wedstrijden[ui.detail])return vDetail(D.wedstrijden[ui.detail]);
+  const L=D.wedstrijden.map((m,i)=>[m,i]).sort((a,b)=>b[0].datum.localeCompare(a[0].datum));
+  return`<section class="panel"><h2>Wedstrijden</h2><p class="small muted">Opstellingen, wissels en doelpunten van de wedstrijden die de trainers hebben bijgehouden.</p>
+  ${L.map(([m,i])=>{const[w,z]=m.score;return`<div class="mcard"><div><b>${m.thuis?'Robur – '+esc(m.tegen):esc(m.tegen)+' – Robur'}</b>${m.verslag?' <span class="flag">Uit verslag</span>':''}<div class="small muted">${fmtDate(m.datum)}</div></div>
+  <div class="row"><span class="res" style="color:var(${w>z?'--good':w<z?'--bad':'--muted'})">${m.thuis?w+'-'+z:z+'-'+w}</span><button data-m="${i}">Bekijken</button></div></div>`}).join('')||'<p class="muted">Nog geen wedstrijden bijgehouden.</p>'}</section>`}
+function vDetail(m){const[w,z]=m.score,home=m.thuis?['Robur O23-2',w]:[m.tegen,z],away=m.thuis?[m.tegen,z]:['Robur O23-2',w];
+  const tl=[...m.goals.map(g=>({t:g.t,h:g.tegen?`Tegendoelpunt ${esc(m.tegen)}`:`<b>Goal ${esc(g.wie)}</b>${g.assist?`, assist ${esc(g.assist)}`:''}`})),...m.wissels.map(s=>({t:s.t,h:`Wissel: <b>${esc(s.in)}</b> erin voor ${esc(s.uit)}`}))].sort((a,b)=>a.t-b.t);
+  return`<div class="row between"><button class="ghost" data-back="1">← Alle wedstrijden</button>${m.verslag?'<span class="flag">Uit verslag</span>':''}</div>
+  <div class="board"><div class="t"><span class="nm">${esc(home[0])}</span><span class="sc">${home[1]}</span></div><div class="mid">Eind<small>${fmtDate(m.datum)}</small></div><div class="t r"><span class="nm">${esc(away[0])}</span><span class="sc">${away[1]}</span></div></div>
+  <div class="grid2"><section class="panel"><h3>Basiself</h3>${formatie(m.basis)}</section>
+  <section class="panel"><h3>Verloop</h3><div class="tl">${tl.map(e=>`<div><span class="min">${e.t}'</span><span>${e.h}</span></div>`).join('')||'<p class="muted">Geen doelpunten of wissels.</p>'}</div>
+  ${(m.schoten||[]).length?`<p class="small muted">Schoten: ${m.schoten.length}, waarvan ${m.schoten.filter(x=>x.res==='goal'||x.res==='op').length} op doel en ${m.schoten.filter(x=>x.res==='goal').length} raak.</p>`:''}</section></div>`}
+function vSelectie(){const S=D.selectie.slice().sort((a,b)=>a.nr-b.nr);
+    return`<section class="panel"><h2>Selectie</h2>${LINIE.map(([t,rs])=>{const L=S.filter(p=>rs.includes(p.rol));return L.length?`<div class="rgroup"><h3>${t}</h3><div class="squad">${L.map(p=>`<div><b>${p.nr}</b><span>${esc(p.naam)} <span class="small muted">${ROL[p.rol]||''}</span></span></div>`).join('')}</div></div>`:''}).join('')}</section>
+  <section class="panel"><h3>Wie kan waar spelen</h3>${dieptekaart(S)}</section>
+  ${opstellingen()}`}
+function opstellingen(){const L=D.wedstrijden.map((m,i)=>[m,i]).sort((a,b)=>b[0].datum.localeCompare(a[0].datum));if(!L.length)return'';
+  return`<section class="panel"><h3>Gebruikte opstellingen</h3><div class="mini">${L.map(([m,i])=>{const[w,z]=m.score;
+    return`<div class="rgroup"><h3>${fmtDate(m.datum)} · ${m.thuis?'Robur – '+esc(m.tegen):esc(m.tegen)+' – Robur'} ${m.thuis?w+'-'+z:z+'-'+w}</h3>${formatie(m.basis)}<button class="ghost" data-m="${i}">Wedstrijd bekijken</button></div>`}).join('')}</div></section>`}
+
+const VIEWS={overzicht:vOverzicht,stand:vStand,uitslagen:vUitslagen,programma:vProgramma,wedstrijden:vWedstrijden,selectie:vSelectie};
+function view(){const h=(location.hash||'#overzicht').slice(1);return VIEWS[h]?h:'overzicht'}
+function render(){if(!D)return;const v=view();document.querySelectorAll('#tabs a').forEach(a=>a.setAttribute('aria-current',a.getAttribute('href')==='#'+v?'page':'false'));
+  document.getElementById('app').innerHTML=VIEWS[v]();}
+document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
+  if(b.dataset.m!=null){ui.detail=+b.dataset.m;if(view()!=='wedstrijden'){location.hash='wedstrijden';return}render();window.scrollTo(0,0)}
+  else if(b.dataset.back){ui.detail=null;render()}});
+window.addEventListener('hashchange',()=>{if(view()!=='wedstrijden')ui.detail=null;render()});
+fetch('data.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{D=d;MODEL=fitModel();
+  document.getElementById('sub').textContent=D.competitie;
+  document.getElementById('foot').innerHTML=`Alleen om te bekijken · bijgewerkt op ${new Date(D.bijgewerkt+'T12:00').toLocaleDateString('nl-NL',{day:'numeric',month:'long',year:'numeric'})} · elke zondag nieuwe gegevens`;render()})
+ .catch(()=>{document.getElementById('app').innerHTML='<section class="panel"><p>De gegevens konden niet worden geladen. Ververs de pagina om het opnieuw te proberen.</p></section>'});
+</script>
+
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}))}</script>
+</body>
+</html>

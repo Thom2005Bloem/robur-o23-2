@@ -1,0 +1,16 @@
+{
+  "name": "Robur et Velocitas O23-2",
+  "short_name": "Robur O23-2",
+  "description": "Stand, uitslagen, programma en opstellingen van Robur et Velocitas O23-2.",
+  "lang": "nl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1a5e34",
+  "theme_color": "#1a5e34",
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}
