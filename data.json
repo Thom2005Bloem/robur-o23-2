@@ -795,6 +795,160 @@
      "res": "goal"
     }
    ]
+  },
+  {
+   "datum": "2026-11-07",
+   "tegen": "FC RDC",
+   "thuis": true,
+   "verslag": true,
+   "score": [
+    3,
+    1
+   ],
+   "basis": [
+    {
+     "nr": 1,
+     "naam": "Nils",
+     "rol": "K"
+    },
+    {
+     "nr": 2,
+     "naam": "Benjamin",
+     "rol": "RA"
+    },
+    {
+     "nr": 3,
+     "naam": "Stijn O",
+     "rol": "CV"
+    },
+    {
+     "nr": 15,
+     "naam": "Finn H",
+     "rol": "CV"
+    },
+    {
+     "nr": 13,
+     "naam": "Luc",
+     "rol": "CV"
+    },
+    {
+     "nr": 4,
+     "naam": "Thijs",
+     "rol": "CM"
+    },
+    {
+     "nr": 12,
+     "naam": "Cas",
+     "rol": "VM"
+    },
+    {
+     "nr": 10,
+     "naam": "Niek",
+     "rol": "MM"
+    },
+    {
+     "nr": 6,
+     "naam": "Finn V",
+     "rol": "LM"
+    },
+    {
+     "nr": 9,
+     "naam": "Ties",
+     "rol": "SP"
+    },
+    {
+     "nr": 11,
+     "naam": "Bram",
+     "rol": "LV"
+    }
+   ],
+   "wissels": [
+    {
+     "t": 36,
+     "in": "Stijn K",
+     "uit": "Stijn O"
+    },
+    {
+     "t": 48,
+     "in": "Stijn O",
+     "uit": "Stijn K"
+    }
+   ],
+   "goals": [
+    {
+     "t": 26,
+     "wie": "Niek",
+     "assist": "Ties"
+    },
+    {
+     "t": 43,
+     "wie": "Bram",
+     "assist": null
+    },
+    {
+     "t": 47,
+     "tegen": true
+    },
+    {
+     "t": 56,
+     "wie": "Tim",
+     "assist": null
+    }
+   ],
+   "schoten": [
+    {
+     "wie": "Niek",
+     "res": "op"
+    },
+    {
+     "wie": "Finn V",
+     "res": "naast"
+    },
+    {
+     "wie": "Stijn O",
+     "res": "naast"
+    },
+    {
+     "wie": "Ties",
+     "res": "naast"
+    },
+    {
+     "wie": "Niek",
+     "res": "goal"
+    },
+    {
+     "wie": "Finn V",
+     "res": "naast"
+    },
+    {
+     "wie": "Stijn K",
+     "res": "op"
+    },
+    {
+     "wie": "Bram",
+     "res": "goal"
+    },
+    {
+     "wie": "Bram",
+     "res": "naast"
+    },
+    {
+     "wie": "Tim",
+     "res": "goal"
+    },
+    {
+     "wie": "Niek",
+     "res": "op"
+    },
+    {
+     "wie": "Raoul",
+     "res": "naast"
+    },
+    {
+     "wie": "Stijn O",
+     "res": "naast"
+    }
+   ]
   }
  ]
 }
