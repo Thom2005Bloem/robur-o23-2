@@ -834,12 +834,12 @@
     {
      "nr": 4,
      "naam": "Thijs",
-     "rol": "CM"
+     "rol": "RM"
     },
     {
      "nr": 12,
      "naam": "Cas",
-     "rol": "VM"
+     "rol": "LM"
     },
     {
      "nr": 10,
@@ -849,7 +849,7 @@
     {
      "nr": 6,
      "naam": "Finn V",
-     "rol": "LM"
+     "rol": "LV"
     },
     {
      "nr": 9,
@@ -859,7 +859,7 @@
     {
      "nr": 11,
      "naam": "Bram",
-     "rol": "LV"
+     "rol": "RV"
     }
    ],
    "wissels": [
