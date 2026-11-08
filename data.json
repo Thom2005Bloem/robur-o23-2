@@ -15,8 +15,43 @@
   "sv Groen Wit '62 O23-3",
   "Terwolde O23-1"
  ],
- "bijgewerkt": "2026-11-07",
+ "bijgewerkt": "2026-11-08",
  "results": [
+  {
+   "d": "2026-11-07",
+   "h": "SV Twello O23-1",
+   "a": "WSV O23-2",
+   "hg": 2,
+   "ag": 0
+  },
+  {
+   "d": "2026-11-07",
+   "h": "Be Quick '28 O23-1",
+   "a": "sv Groen Wit '62 O23-3",
+   "hg": 4,
+   "ag": 0
+  },
+  {
+   "d": "2026-11-07",
+   "h": "Terwolde O23-1",
+   "a": "FC Zutphen O23-1",
+   "hg": 2,
+   "ag": 2
+  },
+  {
+   "d": "2026-11-07",
+   "h": "Diepenveen O23-1",
+   "a": "Activia O23-1",
+   "hg": 5,
+   "ag": 0
+  },
+  {
+   "d": "2026-11-07",
+   "h": "Robur et Velocitas O23-2",
+   "a": "FC RDC O23-2",
+   "hg": 3,
+   "ag": 1
+  },
   {
    "d": "2026-10-31",
    "h": "Be Quick '28 O23-1",
@@ -240,41 +275,6 @@
    "a": "Terwolde O23-1",
    "hg": 12,
    "ag": 0
-  },
-  {
-   "d": "2026-11-07",
-   "h": "SV Twello O23-1",
-   "a": "WSV O23-2",
-   "hg": 2,
-   "ag": 0
-  },
-  {
-   "d": "2026-11-07",
-   "h": "Be Quick '28 O23-1",
-   "a": "sv Groen Wit '62 O23-3",
-   "hg": 4,
-   "ag": 0
-  },
-  {
-   "d": "2026-11-07",
-   "h": "Terwolde O23-1",
-   "a": "FC Zutphen O23-1",
-   "hg": 2,
-   "ag": 2
-  },
-  {
-   "d": "2026-11-07",
-   "h": "Diepenveen O23-1",
-   "a": "Activia O23-1",
-   "hg": 5,
-   "ag": 0
-  },
-  {
-   "d": "2026-11-07",
-   "h": "Robur et Velocitas O23-2",
-   "a": "FC RDC O23-2",
-   "hg": 3,
-   "ag": 1
   }
  ],
  "fixtures": [
@@ -543,6 +543,12 @@
    "ook": []
   },
   {
+   "nr": 20,
+   "naam": "Stijn K",
+   "rol": "SP",
+   "ook": []
+  },
+  {
    "nr": 4,
    "naam": "Thijs",
    "rol": "CV",
@@ -566,12 +572,6 @@
    "nr": 14,
    "naam": "Thom",
    "rol": "RM",
-   "ook": []
-  },
-  {
-   "nr": 20,
-   "naam": "Stijn K",
-   "rol": "SP",
    "ook": []
   }
  ],
